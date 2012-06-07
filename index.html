@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>EasyCrypto</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container" style="padding-top: 30px;">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>EasyCrypto</h1>
+      </div>
+
+      <!-- Example row of columns
+      <div class="row">
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+    -->
+
+    	<div class="row" id="decrypt-section">
+    		<div class="span6">
+    			<h1>Decrypt</h1>
+    			<label>Password</label>
+    			<input id="decrypt-password" type="password" />
+    			<label>Text to decrypt</label>
+    			<textarea id="decrypt-text" style="width: 100%" ></textarea>
+    			<a class="btn" id="decrypt-button">Decrypt</a>
+    		</div>
+    		<div class="span6" id="encrypt-section">
+    			<h1>Encrypt</h1>
+    			<label>Password</label>
+    			<input id="encrypt-password" type="password" />
+    			<label>Text to encrypt</label>
+    			<textarea id="encrypt-text" style="width: 100%" ></textarea>
+    			<a class="btn" id="encrypt-button">Encrypt</a>
+    		</div>
+    	</div>
+    	<hr />
+    	<div class="row">
+        <div class="span12">
+          <h1 style="margin-bottom: 6px;">Results:</h1>
+        </div>
+    		<div class="span12" style="background: #eee;  min-height: 100px; border-radius: 4px;">
+    			<div id="result" style="margin: 20px;"></div>
+    		</div>
+    	</div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/lib/sjcl.js"></script>
+    <script type="text/javascript" src="js/lib/ender.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
